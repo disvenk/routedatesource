@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.route.routedatesource.mapper.MyMapper">
+
+    <select id="getMyById" resultType="com.route.routedatesource.model.My"
+            parameterType="java.lang.Long">
+        select * from my where
+        id=#{id}
+    </select>
+</mapper>
